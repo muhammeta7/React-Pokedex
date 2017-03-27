@@ -4,7 +4,7 @@ var assetsPath = path.join(__dirname, 'src');
 
 module.exports = {
     entry :  {
-        bundle :  ['webpack-dev-server/client?http://0.0.0.0:8080', 
+        bundle :  ['webpack-dev-server/client?http://0.0.0.0:8080',
             'webpack/hot/only-dev-server',
            path.resolve(assetsPath,'index.js')],
     },
@@ -20,7 +20,7 @@ module.exports = {
                 //tell webpack to use jsx-loader for all *.jsx files
                 test: /.jsx?$/,
                 loaders: ['react-hot-loader/webpack','babel'],
-                include: [path.resolve(assetsPath)]
+                include: [path.resolve(assetsPath)],
            }
         ]
     },
